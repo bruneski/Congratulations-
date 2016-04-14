@@ -1,0 +1,348 @@
+/*--Styles for default and maximum desktop--*/
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: black;
+	overflow-y: hidden;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: url('../img/alt-desktop-splash-blur_final2.jpg') no-repeat center;
+	background-position: right bottom;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+a, span, h1, h2, h3 ,h4, h5, h6, p, label{
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+.splash-img {
+  /* Set rules to fill background */
+  min-height: 100%;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.content {
+	padding-top: 200px;
+	display: inline-block;
+}
+
+.offset-container {
+	padding-top: 68%;
+}
+
+.poster {
+	margin-right: 110px;
+	display: none;
+}
+
+.description {
+	color: white;
+	font-size: 40px;
+	height: 75px;
+}
+
+.description span {
+	font-weight: 600;
+}
+
+.main {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.nav-container {
+	margin: 0 auto;
+	height: 100px;
+}
+
+.nav-container ul{
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.nav-links {
+	float: left;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+	background-color: skyblue;
+	border-radius: 4px;
+}
+
+.nav-links a{
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.nav-links:hover {
+	background-color: red;
+}
+
+footer {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #9A918A;
+    padding-left: 15px;
+}
+
+.footer-container {
+	display: inline-block;
+    height: inherit;
+    width: inherit;
+    margin: auto;
+}
+
+.footer-cotainer:last-child {
+	border-right: none;
+}
+
+.footer-column {
+	width: 33%;
+    border-right: 2px solid #D4B342;
+    float: left;
+    display: inline-block;
+    height: inherit;
+}
+
+.production {
+	margin: 0 auto;
+	width: auto;
+	margin-left: 15%;
+}
+
+.production span {
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.production img:hover {
+	background-color: #D4B342;
+}
+.fake-wood {
+    background: url('../img/thin-fwwLogo.png') no-repeat;
+    width: 370px;
+    height: 40px;
+}
+
+.icon-108-media {
+    background: url('../img/108media-icon.png') no-repeat;
+    width: 58px;
+    height: 40px;
+}
+
+.newsletter {
+	margin: 0 auto;
+	width: 50%;
+	white-space: nowrap;
+}
+.newsletter input {
+	width: 75%;
+	margin-top: 10px;
+}
+
+.marketing {
+	width: 150px;
+	margin: 0 auto;
+}
+
+.marketing ul {
+	margin-top: 10px;
+}
+
+.test-img {
+	position: fixed;
+  	top: 0;
+  	left: 0;
+	width:  100%;
+	height:   100%;
+	background: transparent url('../img/congratsmovie_sprite.jpg') no-repeat 0px 0px;
+	-moz-animation:  flipframes 3s steps(20) infinite;
+	-webkit-animation: flipframes 3s steps(20) infinite;
+	animation:  flipframes .05s steps(20) infinite;
+}
+
+.social-icon {
+	display: inline-block;
+}
+
+.social-icon i {
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 25px;
+}
+
+.social-icon a {
+	color: black;
+}
+
+.social-icon a:hover i.fa.fa-facebook{
+	color: #3b5998;
+}
+
+.social-icon a:hover i.fa.fa-twitter{
+	color: #00aced;
+}
+
+.social-icon a:hover i.fa.fa-rss{
+	color: #FF6600;
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	width: 400px;
+	height: 568px;
+	position: relative;
+	margin-right: 75px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+/* flip speed goes here */
+.flipper {
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	position: absolute;
+}
+
+.flipper figure {
+	margin: 0;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	background-color: #D4B342;
+}
+
+figure p {
+	color: black;
+	margin-top: 7px;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.back ul{
+	margin: 0 auto;
+	width: 300px;
+}
+
+.back li {
+}
+
+.vod {
+	display: block;
+}
+
+.vod li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.vod li:hover {
+}
+
+.vod-option.vudu {
+}
+
+.banner {
+	width: 100%;
+	margin: 0 auto;
+	height: 40px;
+	background-color: #D4B342;
+	position: absolute;
+	text-align: center;
+	z-index: 2;
+}
+
+.banner-title, .banner-vods {
+	display: inline-block;
+}
+
+.banner-title {
+	font-weight: 600;
+	font-size: 18px;
+	height: inherit;
+	margin-right: 40px;
+	vertical-align: middle;
+}
+
+.banner-vods {
+	margin-top: 2px;
+}
+
+.banner-vods_title {
+	padding: 7px 0 7px 0;
+	display: inline;
+}
+
+.banner-vods img {
+	width: 35px;
+	height: 35px;
+}
+
+.banner-title {
+	color: black;
+}
+
+/*--Tablet and smaller screens--*/
+@media screen and (max-width : 800px) {
+}
+/*--Average Desktop--*/
+@media screen and (max-width : 1300px) {
+	.fake-wood {
+		background: url('../img/mobile-fww-logo.png') no-repeat;
+		width: 100px;
+		height: 40px;
+	}
+}
+
+
+
