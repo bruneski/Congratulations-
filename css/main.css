@@ -39,12 +39,14 @@ a, span, h1, h2, h3 ,h4, h5, h6, p, label{
 }
 
 .content {
-	padding-top: 200px;
+	width: 100%;
 	display: inline-block;
 }
 
 .offset-container {
-	padding-top: 68%;
+    padding-top: 47%;
+    margin: 0 auto;
+    padding-left: 39%;
 }
 
 .poster {
@@ -66,11 +68,6 @@ a, span, h1, h2, h3 ,h4, h5, h6, p, label{
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
-}
-
-.nav-container {
-	margin: 0 auto;
-	height: 100px;
 }
 
 .nav-container ul{
@@ -334,6 +331,14 @@ figure p {
 
 /*--Tablet and smaller screens--*/
 @media screen and (max-width : 800px) {
+}
+
+@media screen and (max-width : 1200px) {
+	.offset-container {
+		width: 70%;
+        padding-left: 0px;
+        padding-top: 54%;
+	}
 }
 /*--Average Desktop--*/
 @media screen and (max-width : 1300px) {
