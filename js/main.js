@@ -8,13 +8,6 @@ $(document).ready(function() {
 				media : {}
 			}
 	});
-	// document.onload = function() {
-	// 	// $('body').css('background-image', 'url('../img/alt-desktop-splash.jpg') no-repeat center');
-	// 	$('body').css("background-image", "url('../congratsmovie/img/alt-desktop-splash.jpg')");
-	// 	$('body').css("background-repeat", "no-repeat"); 
-	// 	$('body').css("background-position", "center')");
-
-	// }
 
 	(function() {
 	    var elm = $('body'),
