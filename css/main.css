@@ -14,14 +14,19 @@ body {
 	padding: 0;
 	margin: 0;
 	background: url('../img/alt-desktop-splash-blur_final2.jpg') no-repeat center;
-	background-position: right bottom;
+	background-position: right center;
     background-size: cover;
     margin-bottom: 40px;
+    background-attachment: fixed;
 }
 
 a, span, h1, h2, h3 ,h4, h5, h6, p, label{
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
+}
+
+.hidden {
+    display: none;
 }
 
 .splash-img {
@@ -44,14 +49,9 @@ a, span, h1, h2, h3 ,h4, h5, h6, p, label{
 }
 
 .offset-container {
-    padding-top: 47%;
+    padding-top: 61vh;
     margin: 0 auto;
-    padding-left: 39%;
-}
-
-.poster {
-	margin-right: 110px;
-	display: none;
+    padding-left: 26vw;
 }
 
 .description {
@@ -333,15 +333,16 @@ figure p {
 @media screen and (max-width : 800px) {
 }
 
-@media screen and (max-width : 1200px) {
-	.offset-container {
-		width: 70%;
-        padding-left: 0px;
-        padding-top: 43%;
-	}
-}
-/*--Average Desktop--*/
 @media screen and (max-width : 1300px) {
+    .offset-container {
+        width: 70%;
+        padding-left: 0px;
+        padding-top: 60vh;
+    }
+}
+
+/*--Average Desktop--*/
+@media screen and (max-width : 1700px) {
 	.fake-wood {
 		background: url('../img/mobile-fww-logo.png') no-repeat;
 		width: 100px;
