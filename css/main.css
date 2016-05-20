@@ -155,9 +155,46 @@ footer {
 	width: 50%;
 	white-space: nowrap;
 }
-.newsletter input {
-	width: 75%;
-	margin-top: 10px;
+
+.newsletter-form-container {
+    padding-top: 3px;
+}
+
+.newsletter-form-container_submit {
+    display: inline-block;
+}
+
+.newsletter-form-submit {
+    font-size: 13px;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    letter-spacing: .03em;
+    color: #fff;
+    background-color: #aaa;
+    box-sizing: border-box;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 18px;
+    display: inline-block;
+    margin: 0;
+    transition: all 0.23s ease-in-out 0s;
+}
+
+.newsletter-form-email {
+    font-size: 15px;
+    border: 1px solid #ABB0B2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #343434;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 0px 0.4em;
+    display: inline-block;
+    margin: 0;
 }
 
 .marketing {
