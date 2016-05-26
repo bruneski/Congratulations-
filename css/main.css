@@ -164,6 +164,10 @@ footer {
     display: inline-block;
 }
 
+.newsletter-form-container_submit::hover {
+    color: red;
+}
+
 .newsletter-form-submit {
     font-size: 13px;
     border: none;
@@ -374,7 +378,31 @@ figure p {
     .offset-container {
         width: 70%;
         padding-left: 0px;
-        padding-top: 60vh;
+        padding-top: 61vh;
+    }
+
+}
+
+@media screen and (max-width : 1200px) {
+    .main {
+        width: 100%;
+    }
+
+    footer {
+        height: 72px;
+    }
+
+    .production {
+        margin-left: 25%;
+    }
+
+    .newsletter-form-container_submit {
+        text-align: center;
+        display: block;
+    }
+
+    .newsletter-form-email {
+        width: 100%;
     }
 }
 
